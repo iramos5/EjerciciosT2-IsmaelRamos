@@ -9,11 +9,30 @@ public class Ejercicio01 {
 		 */
 
 		//variables
+		Scanner scan = new Scanner (System.in); //inicio del escáner
 		int num;
 		
 		//introducir datos
-		System.out.println("Introduce un número entre 0 y 9999: ");
-		Scanner scan = new Scanner (System.in);
+		System.out.println("Introduce un número entre 0 y 9999: "); //pedir al usuario un número
+		num = scan.nextInt(); //guardar el número
+		
+		//comprobar si el número es capicúa
+		if (num>=0 && num<=9999) {
+			if (num>=0 && num <=99) {
+				
+			}
+			
+			
+			
+			
+			
+			
+		}
+		else {
+			System.out.println("El número no se encuentra entre 0 y 9999");
+		}
+		
+		
 	}
 
 }
