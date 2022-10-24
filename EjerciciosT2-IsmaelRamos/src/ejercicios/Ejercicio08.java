@@ -19,7 +19,13 @@ public class Ejercicio08 {
 		//variables
 		Scanner scan = new Scanner (System.in); //iniciar escaner
 		double precioKm=2.5, distancia, precioBillete, descuento, precioDescuento; //variables
-		int estancia; //variable
+		/* precioKm equivale al precio por kilometro 
+		 * distancia equivale a la distancia a recorrer
+		 * precioBillete es el precio del billete sin descuento
+		 * descuento es el descuento a restar
+		 * precioDescuento es el precio del billete con descuento aplicado
+		 */
+		int estancia; //variable de los dias de estancia
 		
 		//solicitar datos
 		System.out.println("Introduce la distancia a recorrer: "); //pedir distancia
