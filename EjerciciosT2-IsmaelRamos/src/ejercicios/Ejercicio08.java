@@ -1,6 +1,12 @@
 package ejercicios;
 import java.util.Scanner;
 
+/*pruebas
+ * distancia = 200, estancia = 2 --> El billete de tren le costaría 500.0€
+ * distancia = 800, estancia = 7 --> El billete de tren le costaría 2000.0€
+ * distancia = 801, estancia = 8 --> El billete de tren le costaría 1401.75€
+ */
+
 public class Ejercicio08 {
 
 	public static void main(String[] args) {
@@ -22,7 +28,6 @@ public class Ejercicio08 {
 		estancia = scan.nextInt(); //guardar estancia
 		
 		//calcular precio billete
-		
 		if (estancia > 7 && distancia > 800) { //si la estancia es mayor a 7 dias y la distancia mas de 800 km
 			precioBillete = precioKm*distancia; // cálculo de precio billete sin descuento
 			descuento = (precioBillete * 30)/100; // descuento que se aplica

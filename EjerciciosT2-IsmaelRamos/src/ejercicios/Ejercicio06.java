@@ -1,6 +1,11 @@
 package ejercicios;
 import java.util.Scanner;
 
+/*pruebas
+ * ¿Cuánto es 85+87? --> 5 --> El resultado es incorrecto
+ * ¿Cuánto es 56+71? --> 127 --> El resultado es correcto !!
+ */
+
 public class Ejercicio06 {
 
 	public static void main(String[] args) {
