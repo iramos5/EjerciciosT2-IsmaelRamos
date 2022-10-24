@@ -9,11 +9,9 @@ public class Ejercicio04 {
 		 */
 
 		//variables
-		Scanner scan = new Scanner (System.in); //inicio del escáner
 		int num;
 		String letras;
 
-		scan.close(); // cierre escaner
 	}
 
 }
