@@ -8,7 +8,7 @@ import java.util.Scanner;
  * num = 112 --> El número no es capicúa
  * num = 121 --> El número es capicúa
  * num = 1234 --> El número no es capicúa
- * num = 1221 --> 
+ * num = 1221 --> El número es capicúa
  * num = -1 --> El número no se encuentra entre 0 y 9999
  * num = 10000 --> El número no se encuentra entre 0 y 9999
  */
@@ -22,7 +22,13 @@ public class Ejercicio01 {
 
 		//variables
 		Scanner scan = new Scanner (System.in); //inicio del escáner
-		int num, unidades, decenas, centenas, millar; //variables
+		int num, unidades, decenas, centenas, millar; //variables 
+		/*num (numero introducido por el usuario)
+		 * unidades (posicion de las unidades)
+		 * decenas (posicion de las decenas)
+		 * centenas (posicion de las centenas)
+		 * millar (posicion de los millares)
+		 */
 		
 		//introducir datos
 		System.out.println("Introduce un número entre 0 y 9999: "); //pedir al usuario un número
@@ -62,17 +68,17 @@ public class Ejercicio01 {
 				decenas = (num/10)%10; //posicion decenas
 				centenas = (num/100)%10; //posicion centenas
 				millar = (num/1000)%10; //posicion millar
-				if(unidades==millar && decenas==centenas) {
-					System.out.println("El número es capicúa");
+				if(unidades==millar && decenas==centenas) { //si las unidades y los millares son iguales Y las decenas y las centenas tambien
+					System.out.println("El número es capicúa");//respuesta
 				}
-				else {
-					System.out.println("El número no es capicúa");
+				else { //sino
+					System.out.println("El número no es capicúa");//respuesta
 				}
 			}
 			
 		}
-		else {
-			System.out.println("El número no se encuentra entre 0 y 9999");
+		else { //sino
+			System.out.println("El número no se encuentra entre 0 y 9999"); //el numero introducido esta fuera del rango
 		}
 		
 		
