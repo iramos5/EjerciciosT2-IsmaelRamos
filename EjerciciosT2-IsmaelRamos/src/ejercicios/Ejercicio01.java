@@ -19,6 +19,15 @@ public class Ejercicio01 {
 		//comprobar si el número es capicúa
 		if (num>=0 && num<=9999) {
 			if (num>=0 && num <=9) {
+				System.out.println("El número es capicúa");
+			}
+			else if (num>=10 && num<=99) {
+				
+			}
+			else if (num>=100 && num<=999) {
+				
+			}
+			else if (num>=1000 && num<=9999) {
 				
 			}
 			

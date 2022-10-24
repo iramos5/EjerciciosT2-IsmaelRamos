@@ -11,12 +11,14 @@ public class Ejercicio04 {
 		//variables
 		Scanner scan = new Scanner (System.in); //inicio del escáner
 		int num;
+		String numLetras;
 		
 		//introducir datos
 		System.out.println("Introduce un número entre 1 y 99: ");
 		num = scan.nextInt();
 		
 		//mostrar con letras
+		
 		
 
 	}
