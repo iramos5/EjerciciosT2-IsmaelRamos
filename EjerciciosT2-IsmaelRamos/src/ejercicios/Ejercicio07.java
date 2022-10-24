@@ -1,6 +1,12 @@
 package ejercicios;
 import java.util.Scanner;
 
+/*pruebas
+ * horas = 2, minutos = 2, segundos = 2 --> 2 horas, 2 minutos y 3 segundos
+ * horas = 2, minutos = 80, segundos = 2 --> 3 horas, 21 minutos y 3 segundos
+ * horas = 2, minutos = 20, segundos = 80 --> 3 horas, 21 minutos y 3 segundos
+ */
+
 public class Ejercicio07 {
 
 	public static void main(String[] args) {
@@ -8,7 +14,7 @@ public class Ejercicio07 {
 
 		//variables
 		Scanner scan = new Scanner (System.in); //iniciar escaner
-		int horas, minutos, segundos, segundos2, horaFinal; //variables
+		int horas, minutos, segundos, horaFinal; //variables
 		
 		//pedir datos
 		System.out.println("Introduce las horas: "); //pedir horas
@@ -18,11 +24,32 @@ public class Ejercicio07 {
 		System.out.println("Introduce los segundos: "); //pedir segundos
 		segundos = scan.nextInt(); //guardar segundos
 		
-		// calcular hora
-		horas = segundos / 3600; // los segundos entre 3600 nos dan la hora. 3600 viene de 60 * 60
+		// sumar 1 segundo
 		
-		//mostrar resultado
-		System.out.println(horas + " horas, " + minutos + " minutos y " );
+		segundos = segundos + 1;
+		
+		if (segundos > 59) {
+			minutos++;
+			
+			if(minutos>59) {
+				horas++;
+				minutos = minutos - 59;
+			}
+			else {
+				System.out.println(horas+" horas, "+minutos+" minutos y "+segundos+" segundos");
+			}
+		}
+		else if (minutos > 59) { //////////////////////////////////////////////////////////////////////////////////////////////
+			horas++;
+			minutos = minutos - 59;
+			System.out.println(horas+" horas, "+minutos+" minutos y "+segundos+" segundos");
+			
+		}
+		else {
+			System.out.println(horas+" horas, "+minutos+" minutos y "+segundos+" segundos"); ////////////////////////////////////////////////
+		}
+		
+		
 	}
 
 }
