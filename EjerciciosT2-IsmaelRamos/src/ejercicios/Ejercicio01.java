@@ -18,14 +18,11 @@ public class Ejercicio01 {
 		
 		//comprobar si el número es capicúa
 		if (num>=0 && num<=9999) {
-			if (num>=0 && num <=99) {
+			if (num>=0 && num <=9) {
 				
 			}
 			
-			
-			
-			
-			
+		
 			
 		}
 		else {
