@@ -17,6 +17,11 @@ public class Ejercicio06 {
 		//variables
 		Scanner scan = new Scanner (System.in); //inicio del escaner
 		int num1, num2, sumaUsu, sumaReal; //variables
+		/* num1 es el primer numero aleatorio 
+		 * num2 es el segundo numero aleatorio
+		 * sumaUsu es el resultado que da el usuario
+		 * sumaReal es la suma real de los dos numeros aleatorios
+		 */
 		
 		//números aleatorios
 		num1 = (int) (Math.random() * (100 - 1)+1); //numero aleatorio 1
