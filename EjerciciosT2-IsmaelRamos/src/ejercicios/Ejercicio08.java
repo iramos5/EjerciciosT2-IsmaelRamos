@@ -12,7 +12,7 @@ public class Ejercicio08 {
 		
 		//variables
 		Scanner scan = new Scanner (System.in); //iniciar escaner
-		int ; //variables
+		 //variables
 
 
 	}
